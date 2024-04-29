@@ -42,7 +42,9 @@ formElm.forEach((form) => {
 
     console.log(drinks);
 
-    const foundDrink = drinks.find((drink) => drink.id === Number(form.dataset.id));
+    const foundDrink = drinks.find(
+      (drink) => drink.id === Number(form.dataset.id),
+    );
     const ordered = foundDrink.ordered;
     console.log(foundDrink);
 
